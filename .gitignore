@@ -1,2 +1,3 @@
 *.jar
+*.repl*
 node_modules
