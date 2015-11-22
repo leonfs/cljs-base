@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "description": "Base of a ClojureScript project with support for Node JS and React",
   "main": "main.js",
-  "dependencies": {},
+  "dependencies": {
+    "source-map-support": "^0.3.3"
+  },
   "devDependencies": {},
-   "keywords": [
+  "keywords": [
     "ClojureScript",
     "React",
     "Base",
