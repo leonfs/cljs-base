@@ -1,0 +1,19 @@
+{
+  "name": "cljs-base",
+  "version": "0.0.1",
+  "description": "Base of a ClojureScript project with support for Node JS and React",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {},
+   "keywords": [
+    "ClojureScript",
+    "React",
+    "Base",
+    "Node"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leonfs",
+  "license": "MIT"
+}

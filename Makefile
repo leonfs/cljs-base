@@ -18,8 +18,10 @@ release:
 	java -cp cljs.jar:src clojure.main release.clj
 
 set-up:
+	npm install source-map-support
 	brew install wget
 	wget https://github.com/clojure/clojurescript/releases/download/r1.7.170/cljs.jar
-	wget https://clojars.org/repo/cljsjs/react/0.12.2-8/react-0.12.2-8.jar
+	wget https://clojars.org/repo/cljsjs/react/0.14.3-0/react-0.14.3-0.jar
+
 
 
