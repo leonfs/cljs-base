@@ -1,7 +1,6 @@
 ;(ns cljs-base.core
 ;	(:require [clojure.browser.repl :as repl]))
-(ns cljs-base.core
-	(:require cljsjs.react))
+(ns cljs-base.core)
 
 ;(defonce conn
 ;	(repl/connect "http://localhost:9000/repl"))/
@@ -10,6 +9,6 @@
 
 (println "Hello React")
 
-;(defn foo [a b]
-;	(* a b)) 
+(defn foo [a b]
+	(* a b)) 
 

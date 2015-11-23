@@ -17,9 +17,13 @@ nrepl:
 release:
 	java -cp lib/*:src clojure.main release.clj
 
-init:
+dev-tools:
 	npm install
 	brew install wget
+
+lib-deps:
+	rm -rf lib
+	mkdir lib
 	wget https://github.com/clojure/clojurescript/releases/download/r1.7.170/cljs.jar -O lib/cljs.jar
 	wget https://clojars.org/repo/cljsjs/react/0.14.3-0/react-0.14.3-0.jar -O lib/react-0.14.3-0.jar
 
