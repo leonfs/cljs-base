@@ -8,23 +8,24 @@
             [lein-figwheel "0.5.0-1"]]
 
   :clean-targets ^{:protect false} ["out"
+  									                "repl"
                                     :target-path]  
   
   :dependencies [[org.clojure/clojure "1.7.0"]
-  				 [org.clojure/clojurescript "1.7.170"]
-  				 [cljsjs/react "0.14.3-0"]]
-  
-  :source-paths ["src"]
+  				       [org.clojure/clojurescript "1.7.170"]
+  				       [cljsjs/react "0.14.3-0"]
+                 [org.omcljs/om "0.9.0"]]
+
+  :hooks [leiningen.cljsbuild]
 
   :cljsbuild { 
     :builds [{:id "cljs-base"
               :source-paths ["src"]
               :compiler {
-                         :main 'cljs-base.core
+                         :main cljs-base.core
                          :asset-path "out"
                          :output-to "out/main.js"
                          :output-dir "out"
-                         :source-map-timestamp true}}]}
-
-
-  )
+                         :verbose true
+                         :optimizations :advanced
+                         :source-map-timestamp true}}]})

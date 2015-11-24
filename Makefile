@@ -27,5 +27,15 @@ lib-deps:
 	wget https://github.com/clojure/clojurescript/releases/download/r1.7.170/cljs.jar -O lib/cljs.jar
 	wget https://clojars.org/repo/cljsjs/react/0.14.3-0/react-0.14.3-0.jar -O lib/react-0.14.3-0.jar
 
+clean-all: clean-deps
+	rm -rf out
+	rm -rf node_modules
+	
+
+clean-deps:
+	rm -rf lib
+
+.PHONY: clean-deps
+
 
 
